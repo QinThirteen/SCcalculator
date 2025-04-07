@@ -3,21 +3,6 @@ import pandas
 from dataset.jsload import *
 from dataset.excel import *
 
-def Nature_First_Load():
-    NAME = None
-    HP = 0
-    ATK = 0
-    DEF = 0
-    SPD = 0
-    CR = 0
-    CD = 0
-    BE = 0
-    OHB = 0
-    ME = 0
-    ERA = 1
-    EHA = 0
-    ER = 0
-
 def LoadData():
     Light_cones = load_data_for_excel("Light_cones.xlsx") #光锥
     print("光锥导入完成")

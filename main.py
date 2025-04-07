@@ -1,8 +1,6 @@
 # coding: utf-8
 # main主文件
 import os
-import torch
-import pandas
 from dataset.jsload import *
 from dataset.excel import *
 from dataset.dataload import *
@@ -38,12 +36,6 @@ def choose(tool):
 def main():
     #主函数
     light_cones,relics,characters = Load_json()
-    print(light_cones)
-    print("光锥导入完成")
-    print(relics)
-    print("仪器导入完成")
-    print(characters)
-    print("角色导入完成")
     tool = input("请输入您需要使用的工具：")
     choose(tool)
 main()
