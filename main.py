@@ -22,9 +22,10 @@ print("1 四角色排轴计算器   2 角色配装优化器")
 def choose(tool):
     if tool == "1":
         print('四角色排轴计算器')
-        
+
     elif tool == "2":
         print('角色配装优化器')
+        light_cones,relics,characters = Load_json()
         
     elif tool == 'q':
         print('退出')
@@ -35,7 +36,6 @@ def choose(tool):
 
 def main():
     #主函数
-    light_cones,relics,characters = Load_json()
     tool = input("请输入您需要使用的工具：")
     choose(tool)
 main()
